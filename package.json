@@ -1,0 +1,39 @@
+{
+  "name": "cloudlyric",
+  "version": "1.0.0",
+  "description": "Apple Music style lyrics for Netease Cloud Music",
+  "main": "dist/electron/electron/main.js",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && tsc -p tsconfig.electron.json && electron .\"",
+    "build": "vite build && tsc -p tsconfig.electron.json && electron-builder",
+    "build:renderer": "vite build",
+    "build:electron": "tsc -p tsconfig.electron.json"
+  },
+  "keywords": [
+    "lyrics",
+    "netease",
+    "electron",
+    "react"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "concurrently": "^9.2.1",
+    "electron": "^42.3.0",
+    "electron-builder": "^26.0.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.14",
+    "wait-on": "^8.0.5"
+  },
+  "dependencies": {
+    "axios": "^1.16.1",
+    "framer-motion": "^12.40.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "zustand": "^5.0.14"
+  }
+}

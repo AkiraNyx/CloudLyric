@@ -1,0 +1,19 @@
+node_modules/
+dist/
+*.js.map
+
+# .NET build artifacts
+electron/services/smtc-bridge/bin/
+electron/services/smtc-bridge/obj/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Temp
+*.log
