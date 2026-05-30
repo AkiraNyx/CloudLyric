@@ -16,7 +16,7 @@
     "react"
   ],
   "author": "",
-  "license": "MIT",
+  "license": "GPL-3.0-only",
   "type": "commonjs",
   "devDependencies": {
     "@types/react": "^19.2.15",
